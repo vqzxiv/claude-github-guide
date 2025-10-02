@@ -2,14 +2,50 @@
 
 Ce repository contient les bonnes pratiques et recommandations pour structurer vos repositories GitHub afin de collaborer efficacement avec Claude.
 
-## 📋 Table des matières
+---
 
-- [Pourquoi une structure dédiée ?](#pourquoi-une-structure-dédiée)
-- [Structure recommandée](#structure-recommandée)
-- [Le fichier CLAUD.md](#le-fichier-claudmd)
-- [Organisation multi-profils](#organisation-multi-profils)
-- [Exemples de structures](#exemples-de-structures)
-- [Bonnes pratiques](#bonnes-pratiques)
+## 🚀 Démarrage rapide
+
+**Nouveau ?** Commencez par le [Guide de démarrage rapide](./QUICKSTART.md) (30 minutes chrono)
+
+**Besoin d'exemples ?** Consultez les [Exemples de structures](./examples/EXAMPLES.md)
+
+**Questions ?** Voir la [FAQ](./FAQ.md)
+
+---
+
+## 📚 Documentation complète
+
+### 📋 Guides principaux
+
+1. **[Guide de démarrage rapide](./QUICKSTART.md)** ⚡
+   - Créer votre premier repository en 30 minutes
+   - Configuration minimale
+   - Premier test avec Claude
+
+2. **[Exemples de structures](./examples/EXAMPLES.md)** 📊
+   - Expert-Comptable
+   - Développeur Full-Stack
+   - Designer UI/UX
+   - Chef de projet
+   - Formateur
+   - Consultant
+
+3. **[FAQ - Questions fréquentes](./FAQ.md)** ❓
+   - Questions générales
+   - Structure et organisation
+   - Le fichier CLAUD.md
+   - Utilisation pratique
+   - Problèmes courants
+
+### 📄 Templates disponibles
+
+Dans le dossier [templates/](./templates/) :
+
+- **[template-CLAUD.md](./templates/template-CLAUD.md)** - Template générique complet
+- **[template-CLAUD-expert-comptable.md](./templates/template-CLAUD-expert-comptable.md)** - Template spécialisé comptabilité
+
+---
 
 ## 🎯 Pourquoi une structure dédiée ?
 
@@ -18,6 +54,8 @@ Travailler avec Claude sur des projets nécessite une organisation claire pour :
 - **Traçabilité** : Historique clair des interactions et décisions
 - **Autonomie** : Permettre à Claude de comprendre le projet sans explications répétées
 - **Collaboration** : Faciliter le travail sur plusieurs profils ou projets
+
+---
 
 ## 🏗️ Structure recommandée
 
@@ -71,6 +109,8 @@ github.com/votre-username/claude-profiles/
 - Moins flexible
 - Historique git mélangé
 
+---
+
 ## 📄 Le fichier CLAUD.md
 
 Le fichier `CLAUD.md` est **essentiel**. C'est le premier fichier que Claude devrait lire pour comprendre le contexte du repository.
@@ -107,7 +147,9 @@ Le fichier `CLAUD.md` est **essentiel**. C'est le premier fichier que Claude dev
 [Liens vers documentation externe, standards, etc.]
 ```
 
-Voir [template-CLAUD.md](./templates/template-CLAUD.md) pour un modèle complet.
+👉 Voir [template-CLAUD.md](./templates/template-CLAUD.md) pour un modèle complet.
+
+---
 
 ## 🎭 Organisation multi-profils
 
@@ -129,53 +171,7 @@ Exemples :
 - `claude-legal-contrats`
 - `claude-marketing-contenus`
 
-## 📁 Exemples de structures
-
-### Structure pour un profil Expert-Comptable
-
-```
-claude-expert-comptable/
-├── CLAUD.md                    # Instructions pour Claude
-├── README.md                   # Documentation utilisateur
-├── profil/
-│   ├── competences.md          # Domaines d'expertise
-│   └── preferences.md          # Préférences de travail
-├── contexte/
-│   ├── entreprise.md           # Info sur l'entreprise
-│   ├── reglementations.md      # Cadre légal
-│   └── processus.md            # Processus métier
-├── historique/
-│   ├── 2025-01-decisions.md   # Décisions importantes
-│   └── interactions/           # Résumés d'échanges
-│       ├── 2025-01-15.md
-│       └── 2025-01-22.md
-├── templates/
-│   ├── rapport-mensuel.md
-│   └── analyse-bilan.md
-└── references/
-    ├── plan-comptable.pdf
-    └── baremes-fiscaux.md
-```
-
-### Structure pour un profil Développeur
-
-```
-claude-dev-web/
-├── CLAUD.md
-├── README.md
-├── project/
-│   ├── architecture.md
-│   ├── tech-stack.md
-│   └── conventions.md
-├── docs/
-│   ├── api/
-│   └── guides/
-├── snippets/
-│   ├── react/
-│   └── utils/
-└── historique/
-    └── decisions/
-```
+---
 
 ## ✅ Bonnes pratiques
 
@@ -219,6 +215,8 @@ Pour les profils complexes :
 - `dev` : modifications en cours
 - Feature branches : expérimentations
 
+---
+
 ## 🔄 Migration depuis une structure existante
 
 Si vous avez déjà un repository `docs` avec plusieurs profils :
@@ -244,28 +242,92 @@ Si vous avez déjà un repository `docs` avec plusieurs profils :
    # Utiliser git filter-branch ou git subtree
    ```
 
-## 🚀 Pour commencer
+---
 
-1. Clonez ce repository comme référence
-2. Copiez le template `CLAUD.md` approprié
-3. Créez votre premier repository de profil
-4. Adaptez la structure à vos besoins
-5. Itérez et améliorez au fil du temps
+## 📖 Table des matières complète
 
-## 📖 Ressources complémentaires
+### Guides
+- [🚀 Démarrage rapide](./QUICKSTART.md) - 30 minutes pour démarrer
+- [📊 Exemples de structures](./examples/EXAMPLES.md) - Cas concrets par profil
+- [❓ FAQ](./FAQ.md) - Questions fréquentes
 
-- [Templates](./templates/) : Modèles prêts à l'emploi
-- [Exemples](./examples/) : Cas d'usage concrets
-- [FAQ](./FAQ.md) : Questions fréquentes
+### Templates
+- [📄 Template CLAUD.md générique](./templates/template-CLAUD.md)
+- [📄 Template CLAUD.md Expert-Comptable](./templates/template-CLAUD-expert-comptable.md)
+
+### Ressources
+- Structure recommandée (ci-dessus)
+- Bonnes pratiques (ci-dessus)
+- Migration (ci-dessus)
+
+---
 
 ## 🤝 Contribution
 
-Ce guide est évolutif ! N'hésitez pas à proposer des améliorations via issues ou pull requests.
+Ce guide est évolutif ! N'hésitez pas à :
+- Proposer des améliorations via **Issues**
+- Soumettre des **Pull Requests**
+- Partager votre expérience et vos structures
+
+### Comment contribuer ?
+
+1. Forkez ce repository
+2. Créez une branche pour votre contribution
+3. Ajoutez votre contenu ou modification
+4. Soumettez une Pull Request avec une description claire
+
+**Contributions bienvenues :**
+- Nouveaux templates pour d'autres profils
+- Exemples de structures supplémentaires
+- Corrections et améliorations
+- Traductions
+
+---
 
 ## 📄 Licence
 
 MIT - Libre d'utilisation et d'adaptation
 
+Vous êtes libre de :
+- Utiliser ce guide pour vos projets personnels ou professionnels
+- Modifier et adapter les templates à vos besoins
+- Partager et redistribuer
+
+---
+
+## 🌟 Pour aller plus loin
+
+### Configuration dans Claude
+
+N'oubliez pas de configurer vos préférences utilisateur dans Claude :
+
+```
+Dans Settings > Profile, ajoutez :
+
+"Si nous discutons d'un repository GitHub qui contient un fichier CLAUD.md, 
+lis-le et suis ses directives pour m'assister.
+
+Mon compte GitHub : https://github.com/[votre-username]/"
+```
+
+### Ressources externes
+
+- [Documentation GitHub](https://docs.github.com)
+- [Guide Markdown](https://www.markdownguide.org)
+- [Conventional Commits](https://www.conventionalcommits.org)
+
+---
+
+## 📞 Support
+
+Des questions ? Plusieurs options :
+- Consultez la [FAQ](./FAQ.md)
+- Créez une [Issue](../../issues) sur ce repository
+- Consultez les [Discussions](../../discussions)
+
 ---
 
 **Note** : Ce guide est conçu pour optimiser la collaboration entre vous et Claude. Adaptez-le à vos besoins spécifiques !
+
+**Dernière mise à jour** : Octobre 2025  
+**Version** : 1.0
